@@ -4,7 +4,7 @@ authors:
 url: "https://github.com/v1v/updatecli-policies-demo/"
 documentation: "https://github.com/v1v/updatecli-policies-demo/tree/main/updatecli/policies/golang/version/README.md"
 source: "https://github.com/v1v/updatecli-policies-demo/tree/main/updatecli/policies/golang/version/"
-version: 0.1.0
+version: 0.1.1
 vendor: Updatecli Project
 
 licenses:
