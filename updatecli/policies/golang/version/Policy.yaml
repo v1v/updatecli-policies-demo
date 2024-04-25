@@ -1,0 +1,14 @@
+authors:
+  - Victor Martinez <VictorMartinezRubio@gmail.com>
+
+url: "https://github.com/v1v/updatecli-demo-policies/"
+documentation: "https://github.com/v1v/updatecli-demo-policies/tree/main/updatecli/policies/golang/README.md"
+source: "https://github.com/v1v/updatecli-demo-policies/tree/main/updatecli/policies/golang/"
+version: 0.1.0
+vendor: Updatecli Project
+
+licenses:
+  - "Apache-2.0 license"
+
+description: |
+  Golang Version update policy
