@@ -2,6 +2,8 @@ name: 'deps: Bump Golang version'
 pipelineid: golang/version
 automerge: false
 
+# path: .
+
 scm:
   enabled: false
   # user: v1v-bot

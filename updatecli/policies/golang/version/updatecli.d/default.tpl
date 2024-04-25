@@ -14,13 +14,24 @@ sources:
         kind: golang
 
 targets:
-    .go-version:
+    go-version:
         name: 'deps(.go-version): Bump Golang version to {{ source "golang" }}'
-        kind: golang/gomod
+        kind: file
 #{{ if or (.scm.enabled) (env "GITHUB_REPOSITORY") }}
         scmid: default
 # {{ end }}
         sourceid: golang
+        spec:
+          content: '{{ source `golang` }}'
+          file: {{ .path }}/.go-version
+
+conditions:
+  container:
+    name: "Ensure latest container image is publish"
+    kind: dockerimage
+    spec:
+      image: golang
+      tag: '{{ source "golang" }}'
 
 {{ if or (.scm.enabled) (env "GITHUB_REPOSITORY") }}
 scms:
